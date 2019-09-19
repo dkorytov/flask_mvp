@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>{{ title }} - Template test</title>
+    </head>
+    <body>
+      <h1>Hello, {{ user.username }}!</h1>
+      <select name=colours method="POST">
+	{% for color in colors %}
+	<option value= "{{ color }}" SELECTED>{{ color }}</option>"
+	{% endfor %}
+      </select>
+    </body>
+</html>

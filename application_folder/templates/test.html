@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Input Test</title>
+    </head>
+    <body>
+      <h1>Hello User, we will try to get input</h1>
+      <form method="POST">
+        Language: <input type="text" name="lang"><br>
+        Framework: <input type="text" name="frame"><br>
+	<select name=color>
+	{% for color in colors %}
+	<option value= "{{ color }}" SELECTED>{{ color }}</option>"
+	{% endfor %}
+	</select>
+        <input type="submit" value="Submit"><br>
+      </form>
+    </body>
+</html>
