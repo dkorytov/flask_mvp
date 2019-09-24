@@ -14,7 +14,7 @@ def form_example():
         print('Input params:', language, framework, color)
 
 
-        
+    
         ### model output goes here
         template_dict = {
             'lang' : language,
@@ -56,5 +56,7 @@ def index2():
     # render template assumes the file is in "templates/*given_filename.html*
     colors = {'a', 'b', 'c'}
     x=request.args.get('x')
+    y=request.args.get('y')
+    return str(int(x)+2+3*int(y))
     print(x)
     return render_template('index2.html', title='My own title', user=user, colors=colors)
