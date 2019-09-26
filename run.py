@@ -6,4 +6,4 @@ print("\n")
 
 from application_folder import flask_instance
 
-flask_instance.run(debug=True)
+flask_instance.run(debug=True, host='0.0.0.0')
